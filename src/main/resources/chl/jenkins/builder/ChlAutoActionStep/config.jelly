@@ -1,0 +1,24 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  
+    <f:entry title="Lib path" field="libPath">
+        <f:textbox/>
+    </f:entry>    
+    
+    <f:entry title="Root path" field="rootPath">
+        <f:textbox/>
+    </f:entry>    
+    
+    <f:entry title="${%Browsers}" field="browserString">
+        <f:textbox/>
+    </f:entry>
+    
+    <f:entry title="${%ScriptContent}" field="content">
+        <f:textarea/>
+    </f:entry>
+    
+    <f:entry title="Run script only" field="runScriptOnly">
+        <f:checkbox/>
+    </f:entry>
+    
+</j:jelly>
